@@ -1,0 +1,13 @@
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/ncurses
+major_version=5
+version=5.9.20110404
+
+Name: form
+Description: ncurses 5.9 add-on library
+Version: ${version}
+Requires: ncurses tinfo
+Libs: -L${libdir} -lform
+Cflags: -I${includedir}

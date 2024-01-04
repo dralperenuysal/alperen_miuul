@@ -1,0 +1,12 @@
+==> 2023-12-23 13:34:03 <==
+# cmd: /home/alperen_uysal/miniconda3/condabin/mamba create --quiet --file /home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/779961c0d30c3d4eae205fa421cb1c2e_.yaml --prefix /home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/779961c0d30c3d4eae205fa421cb1c2e_
+# conda version: 23.11.0
++bioconda/linux-64::infernal-1.1.4-pl5321h031d066_4
++bioconda/linux-64::trnascan-se-2.0.12-pl5321h031d066_0
++conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
++conda-forge/linux-64::_openmp_mutex-4.5-2_gnu
++conda-forge/linux-64::libgcc-ng-13.2.0-h807b86a_3
++conda-forge/linux-64::libgomp-13.2.0-h807b86a_3
++conda-forge/linux-64::libxcrypt-4.4.36-hd590300_1
++conda-forge/linux-64::perl-5.32.1-7_hd590300_perl5
+# update specs: ['trnascan-se']
