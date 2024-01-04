@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcre
+Description: PCRE - Perl compatible regular expressions C library with 8 bit character support
+Version: 8.45
+Libs: -L${libdir} -lpcre
+Libs.private:  
+Cflags: -I${includedir} 

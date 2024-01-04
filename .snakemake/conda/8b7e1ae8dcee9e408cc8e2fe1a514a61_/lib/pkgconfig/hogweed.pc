@@ -1,0 +1,19 @@
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_
+exec_prefix=${prefix}
+libdir=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_/lib
+includedir=${prefix}/include
+
+# Uses Requires.private and Libs.private, under the assumption that
+# when using shared libraries, the ELF dependencies from libhogweed.so
+# to nettle and gmp work.
+
+Name: Hogweed
+Description: Nettle low-level cryptographic library (public-key algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 3.3
+Requires: # nettle
+Requires.private:  nettle
+Libs: -L${libdir} -lhogweed # -lgmp 
+Libs.private:  -lgmp 
+Cflags: -I${includedir}
+

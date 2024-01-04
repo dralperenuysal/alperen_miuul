@@ -1,0 +1,11 @@
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_
+exec_prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_
+libdir=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_/lib
+includedir=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

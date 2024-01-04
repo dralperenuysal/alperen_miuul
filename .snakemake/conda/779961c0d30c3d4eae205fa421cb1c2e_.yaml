@@ -1,0 +1,7 @@
+name: alperen_miuul
+channels:
+  - bioconda
+  - conda-forge
+  - nanoporetech
+dependencies:
+  - tRNAscan-SE

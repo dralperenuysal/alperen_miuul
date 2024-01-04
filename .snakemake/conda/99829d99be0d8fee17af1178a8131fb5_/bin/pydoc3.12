@@ -1,0 +1,5 @@
+#!/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

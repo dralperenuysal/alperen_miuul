@@ -1,0 +1,11 @@
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/99829d99be0d8fee17af1178a8131fb5_/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

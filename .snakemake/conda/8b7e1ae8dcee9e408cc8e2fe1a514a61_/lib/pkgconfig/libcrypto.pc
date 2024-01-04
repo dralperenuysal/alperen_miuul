@@ -1,0 +1,13 @@
+prefix=/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.0.2u
+Requires: 
+Libs: -L${libdir} -lcrypto
+Libs.private: -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_/lib -Wl,-rpath-link,/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_/lib -L/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/8b7e1ae8dcee9e408cc8e2fe1a514a61_/lib -ldl
+Cflags: -I${includedir} 
