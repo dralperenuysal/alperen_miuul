@@ -1,3 +1,4 @@
+import snakemake
 from snakemake.shell import shell
 
 # input and output

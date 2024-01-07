@@ -1,0 +1,4 @@
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/Exporter.pm relocate_as=../../../Exporter.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/Exporter/Heavy.pm relocate_as=../../../Exporter/Heavy.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/Exporter.3 relocate_as=../../../../../../man/man3/Exporter.3
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/Exporter::Heavy.3 relocate_as=../../../../../../man/man3/Exporter::Heavy.3

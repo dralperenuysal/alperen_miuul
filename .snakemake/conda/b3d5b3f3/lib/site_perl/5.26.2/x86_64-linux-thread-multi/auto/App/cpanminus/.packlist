@@ -1,0 +1,6 @@
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/bin/cpanm relocate_as=../../../../../../../bin/cpanm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/App/cpanminus.pm relocate_as=../../../../App/cpanminus.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/App/cpanminus/fatscript.pm relocate_as=../../../../App/cpanminus/fatscript.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man1/cpanm.1 relocate_as=../../../../../../../man/man1/cpanm.1
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/App::cpanminus.3 relocate_as=../../../../../../../man/man3/App::cpanminus.3
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/App::cpanminus::fatscript.3 relocate_as=../../../../../../../man/man3/App::cpanminus::fatscript.3

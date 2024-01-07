@@ -1,0 +1,3 @@
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/x86_64-linux-thread-multi/List/MoreUtils/XS.pm relocate_as=../../../../List/MoreUtils/XS.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/x86_64-linux-thread-multi/auto/List/MoreUtils/XS/XS.so relocate_as=XS.so
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/List::MoreUtils::XS.3 relocate_as=../../../../../../../../man/man3/List::MoreUtils::XS.3

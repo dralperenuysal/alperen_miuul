@@ -1,0 +1,11 @@
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/bin/ptar relocate_as=../../../../../../../bin/ptar
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/bin/ptardiff relocate_as=../../../../../../../bin/ptardiff
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/bin/ptargrep relocate_as=../../../../../../../bin/ptargrep
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/Archive/Tar.pm relocate_as=../../../../Archive/Tar.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/Archive/Tar/Constant.pm relocate_as=../../../../Archive/Tar/Constant.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/Archive/Tar/File.pm relocate_as=../../../../Archive/Tar/File.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man1/ptar.1 relocate_as=../../../../../../../man/man1/ptar.1
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man1/ptardiff.1 relocate_as=../../../../../../../man/man1/ptardiff.1
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man1/ptargrep.1 relocate_as=../../../../../../../man/man1/ptargrep.1
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/Archive::Tar.3 relocate_as=../../../../../../../man/man3/Archive::Tar.3
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/Archive::Tar::File.3 relocate_as=../../../../../../../man/man3/Archive::Tar::File.3

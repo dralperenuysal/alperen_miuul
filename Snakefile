@@ -1,22 +1,23 @@
 rule all:
     input:
-        "output/tRNAscan/tRNA_scan_result.txt",
-        "output/tRNAscan/G_intestinalis.tRNA",
-        #*expand("output/tRNAscan/{sp}.tRNA", sp = ["G_muris", "G_intestinalis"]),
-        expand("output/blastn/G_intestinalis/{sp}.blastn", sp = ["G_muris", "S_salmonicida"]),
+        "output/tRNA_scan_result.txt",
+        "output/G_intestinalis.tRNA",
+        #expand("output/tRNAscan/{sp}.tRNA", sp = ["G_muris", "G_intestinalis"]),
+        expand("output/tRNAscan/{sp}.tRNA", sp =["G_muris", "S_salmonicida"]),
+        #expand("output/blastn/G_intestinalis/{sp}.blastn", sp = ["G_muris", "S_salmonicida"]),
 
 rule tRNAscan:
     input: "resource/genome/G_intestinalis.fasta"
-    output: "output/tRNAscan/tRNA_scan_result.txt"
+    output: "output/tRNA_scan_result.txt"
     conda: "env/env.yaml"
-    shell: "bash scripts/tRNAscan.sh {input} {output}"
+    shell: 'bash scripts/tRNAscan.sh {input} {output}'
 
 rule tRNAscan_stats:
     input:
             genome = "resource/genome/G_intestinalis.fasta"
     output:
-            tRNA = "output/tRNAscan/G_intestinalis.tRNA",
-            stats = "output/tRNAscan/G_intestinalis.stats"
+            tRNA = "output/G_intestinalis.tRNA",
+            stats = "output/G_intestinalis.stats"
     params:
             threads = 2
     conda:
@@ -50,7 +51,7 @@ rule makeblastdb:
         "output/{type}/db/{db}.nto"
     params:
         outname = "output/{type}/db/{db}"
-    conda: "/home/alperen_uysal/miniconda3/envs/blast"
+    #conda: "/home/alperen_uysal/miniconda3/envs/blast"
     shell:
         'makeblastdb -dbtype nucl -in {input} -out {params.outname}'
 
@@ -67,6 +68,6 @@ rule blastn:
         max_target_seqs = 1,
         max_hsps = 1,
         db_prefix = "output/{type}/db/{db}"
-    conda: "/home/alperen_uysal/miniconda3/envs/blast"
+    #conda: "/home/alperen_uysal/miniconda3/envs/blast"
     script:
         "scripts/blastn.py"

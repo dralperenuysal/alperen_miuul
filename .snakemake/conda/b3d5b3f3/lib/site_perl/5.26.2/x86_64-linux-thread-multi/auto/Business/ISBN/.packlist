@@ -1,0 +1,6 @@
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/Business/ISBN.pm relocate_as=../../../../Business/ISBN.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/Business/ISBN10.pm relocate_as=../../../../Business/ISBN10.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/lib/site_perl/5.26.2/Business/ISBN13.pm relocate_as=../../../../Business/ISBN13.pm
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/Business::ISBN.3 relocate_as=../../../../../../../man/man3/Business::ISBN.3
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/Business::ISBN10.3 relocate_as=../../../../../../../man/man3/Business::ISBN10.3
+/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/b3d5b3f3/man/man3/Business::ISBN13.3 relocate_as=../../../../../../../man/man3/Business::ISBN13.3
