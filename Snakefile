@@ -1,10 +1,12 @@
 rule all:
     input:
-        "output/tRNA_scan_result.txt",
-        "output/G_intestinalis.tRNA",
+        #"output/tRNA_scan_result.txt",
+        #"output/G_intestinalis.tRNA",
         #expand("output/tRNAscan/{sp}.tRNA", sp = ["G_muris", "G_intestinalis"]),
-        expand("output/tRNAscan/{sp}.tRNA", sp =["G_muris", "S_salmonicida"]),
+        #expand("output/tRNAscan/{sp}.tRNA", sp =["G_muris", "S_salmonicida"]),
         #expand("output/blastn/G_intestinalis/{sp}.blastn", sp = ["G_muris", "S_salmonicida"]),
+        expand("output/barrnap/{genome}_rrna_count.gff", genome=['G_intestinalis', 'G_muris', 'S_salmonicida'])
+
 
 rule tRNAscan:
     input: "resource/genome/G_intestinalis.fasta"
@@ -71,3 +73,15 @@ rule blastn:
     #conda: "/home/alperen_uysal/miniconda3/envs/blast"
     script:
         "scripts/blastn.py"
+
+rule barrnap:
+    input:
+        genome = "resource/genome/{genome}.fasta"
+    output:
+        barrnap_gff = "output/barrnap/{genome}_rrna_count.gff"
+
+    conda: "env/env.yaml"
+
+    shell:
+        """barrnap --kingdom euk --quiet {input.genome} > {output.barrnap_gff}"""
+
