@@ -1,7 +1,0 @@
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/bin/json_xs relocate_as=../../../../../../../bin/json_xs
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/x86_64-linux-thread-multi/JSON/XS.pm relocate_as=../../../JSON/XS.pm
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/x86_64-linux-thread-multi/JSON/XS/Boolean.pm relocate_as=../../../JSON/XS/Boolean.pm
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/lib/site_perl/5.26.2/x86_64-linux-thread-multi/auto/JSON/XS/XS.so relocate_as=XS.so
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man1/json_xs.1 relocate_as=../../../../../../../man/man1/json_xs.1
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/JSON::XS.3 relocate_as=../../../../../../../man/man3/JSON::XS.3
-/home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/834409bd/man/man3/JSON::XS::Boolean.3 relocate_as=../../../../../../../man/man3/JSON::XS::Boolean.3
