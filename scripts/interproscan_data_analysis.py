@@ -40,6 +40,3 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 # Show the plot
 plt.show()
 
-# List the top10 IPR IDs
-df_ipr[["ipr"]].value_counts()[:10]
-
