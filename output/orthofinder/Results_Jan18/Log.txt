@@ -1,0 +1,12 @@
+2024-01-18 23:31:19 : Started OrthoFinder version 2.5.5
+Command Line: /home/alperen_uysal/projects_ubuntu/alperen_miuul/.snakemake/conda/bb27504fa12b3cddb3f263a914b32e86_/bin/orthofinder -f resource/orthofinder -og -o output/orthofinder
+
+WorkingDirectory_Base: output/orthofinder/Results_Jan18/WorkingDirectory/
+
+Species used: 
+0: G_intestinalis_aa.fasta
+1: G_muris_aa.fasta
+2: S_salmonicida_aa.fasta
+
+FN_Orthogroups: output/orthofinder/Results_Jan18/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+2024-01-18 23:35:30 : OrthoFinder run completed

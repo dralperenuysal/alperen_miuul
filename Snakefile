@@ -5,8 +5,8 @@ rule all:
         #expand("output/tRNAscan/{sp}.tRNA", sp = ["G_muris", "G_intestinalis"]),
         #expand("output/tRNAscan/{sp}.tRNA", sp =["G_muris", "S_salmonicida"]),
         #expand("output/blastn/G_intestinalis/{sp}.blastn", sp = ["G_muris", "S_salmonicida"]),
-        expand("output/barrnap/{genome}_rrna_count.gff", genome=['G_intestinalis', 'G_muris', 'S_salmonicida'])
-
+        #expand("output/barrnap/{genome}_rrna_count.gff", genome=['G_intestinalis', 'G_muris', 'S_salmonicida'])
+        "output/orthofinder/"
 
 rule tRNAscan:
     input: "resource/genome/G_intestinalis.fasta"
@@ -84,4 +84,14 @@ rule barrnap:
 
     shell:
         """barrnap --kingdom euk --quiet {input.genome} > {output.barrnap_gff}"""
+
+rule orthofinder:
+    input:
+        fasta = "resource/orthofinder/",
+    output:
+        directory("output/orthofinder/"),
+    conda:
+        "env/env.yaml",
+    script:
+        "scripts/2_BioinformaticsTools/orthofinder.py"
 
