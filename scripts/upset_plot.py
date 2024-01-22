@@ -3,16 +3,16 @@ from matplotlib import pyplot as plt
 from upsetplot import UpSet
 import seaborn as sns
 
-path_OG_count = "output/orthofinder/Results_Jan18/Orthogroups/Orthogroups.GeneCount.tsv"
-path_singletone = "output/orthofinder/Results_Jan18/Orthogroups/Orthogroups_UnassignedGenes.tsv"
-out_0 = "data/upset_plot.png"
+path_OG_count = "../output/orthofinder/Results_Jan18/Orthogroups/Orthogroups.GeneCount.tsv"
+path_singletone = "../output/orthofinder/Results_Jan18/Orthogroups/Orthogroups_UnassignedGenes.tsv"
+out_0 = "../data/upset_plot.png"
 
 df_count = pd.read_csv(path_OG_count, sep = '\t', header = 'infer')
 df_count = df_count.set_index("Orthogroup").sort_values(by="Total", ascending=False)
 df_count.loc[df_count["Total"] > 1, "Type"] = "OG"
 
 df_sing = pd.read_csv(path_singletone, sep = '\t', header = 'infer')
-df_sing = df_sing.set_index("Orthogroup").fillna(8)
+df_sing = df_sing.set_index("Orthogroup").fillna(0)
 df_sing["Total"] = 1
 df_sing = df_sing.applymap(lambda x: 1 if isinstance(x, str) == True else x)
 
