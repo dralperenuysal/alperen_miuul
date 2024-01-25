@@ -1,7 +1,7 @@
 import pandas as pd
 import glob
 
-path = "output/interproscan/*.tsv"
+path = "resource/interproscan/*.tsv"
 out_file = "data/ipr_concat.csv"
 list_files = glob.glob(path)
 
