@@ -10,3 +10,5 @@
 23th January 2024 - The orthofinder analysis results were plotted. Find it in the data/ directory.
 
 25th January 2024 - Snakemake DAG graph was drawn.
+
+28th January 2024 - Interproscan data analysis was done. Current working directory problem solved. 
