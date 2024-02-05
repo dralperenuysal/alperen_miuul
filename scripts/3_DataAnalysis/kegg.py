@@ -2,7 +2,6 @@ import pandas as pd
 import os
 
 print(os.getcwd())
-os.chdir('/home/alperen/PycharmProjects/alperen_miuul')
 
 # define the paths
 eggnog = "resource/kegg/G_intestinalis.csv"
@@ -22,3 +21,6 @@ df_kegg_melt = df_kegg_melt.drop_duplicates(subset=["KEGG_KOs"])
 
 # sort the data
 df_kegg_melt_sort = df_kegg_melt.sort_values(by=["variable"], ascending=False)
+
+# save
+df_kegg_melt_sort["KEGG_KOs"].to_csv(out_file, sep= '\t', index=False, header= False)
