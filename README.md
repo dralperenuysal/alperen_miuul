@@ -18,4 +18,6 @@
 
 ![dag.png](dag.png)
 
+![cover.png](cover.png)
+
 Alperen Uysal , MD, PhDc.
