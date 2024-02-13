@@ -14,3 +14,5 @@
 28th January 2024 - Interproscan data analysis was done. Current working directory problem solved. 
 
 5th February 2024 - KEGG analysis and iptah3 pathway visualization were done and uploaded to github."
+
+![dag.png](dag.png)
