@@ -12,7 +12,7 @@ rule tRNAscan:
     input: "resource/genome/G_intestinalis.fasta"
     output: "output/tRNA_scan_result.txt"
     conda: "env/env.yaml"
-    shell: 'bash scripts/tRNAscan.sh {input} {output}'
+    shell: 'bash scripts/1_trnascan-se/tRNAscan.sh {input} {output}'
 
 rule tRNAscan_stats:
     input:
@@ -25,7 +25,7 @@ rule tRNAscan_stats:
     conda:
             "env/env.yaml"
     script:
-            "scripts/tRNAscan_stats.py"
+            "scripts/1_trnascan-se/tRNAscan_stats.py"
 
 rule tRNAscan_stats_wildcard:
     input:
@@ -38,7 +38,7 @@ rule tRNAscan_stats_wildcard:
     conda:
         "env/env.yaml"
     script:
-        "scripts/tRNAscan_stats.py"
+        "scripts/1_trnascan-se/tRNAscan_stats.py"
 
 rule makeblastdb:
     input:
@@ -53,7 +53,7 @@ rule makeblastdb:
         "output/{type}/db/{db}.nto"
     params:
         outname = "output/{type}/db/{db}"
-    #conda: "/home/alperen_uysal/miniconda3/envs/blast"
+    #conda: None
     shell:
         'makeblastdb -dbtype nucl -in {input} -out {params.outname}'
 
@@ -72,7 +72,7 @@ rule blastn:
         db_prefix = "output/{type}/db/{db}"
     #conda: "/home/alperen_uysal/miniconda3/envs/blast"
     script:
-        "scripts/blastn.py"
+        "scripts/2_BioinformaticsTools/blastn.py"
 
 rule barrnap:
     input:
@@ -94,4 +94,3 @@ rule orthofinder:
         "env/env.yaml",
     script:
         "scripts/2_BioinformaticsTools/orthofinder.py"
-
