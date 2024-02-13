@@ -1,4 +1,5 @@
-# alperen_miuul
+# 2024 February, Miuul Bioinformatics Bootcamp
+
 10th January 2024 - Basic Ribosomal RNA Prediction analysis was done as a practice.
 
 14th January 2024 - The plots were drawn. Uploaded into output/blastn/plots directory.
@@ -16,3 +17,5 @@
 5th February 2024 - KEGG analysis and iptah3 pathway visualization were done and uploaded to github."
 
 ![dag.png](dag.png)
+
+Alperen Uysal , MD, PhDc.
